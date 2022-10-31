@@ -30,7 +30,7 @@ If a comment is longer than 64KB (the size limit) it will be truncated and resul
   - Tested in version: 4.2
   - Fixed in version: 4.2.3
 - [ ] GIF Walkthrough: 
-    - <img src="https://github.com/MattPlum/Project-7-WordPress-Pen-Testing/blob/f85f896a9208a745c0f5e8948ee676fe14d64500/exp1.gif">
+    - <img src="https://github.com/MattPlum/Project-7-WordPress-Pen-Testing/blob/f85f896a9208a745c0f5e8948ee676fe14d64500/exp2.gif">
 - [ ] Steps to recreate: 
     - Requires contributor or author level account, make a page with the following link. Switch from Visual to Text view: 
     - `<a href=“[caption code=“>]</a><a title=“ onmouseover=alert(‘Vulnerability’) “>link</a>`
