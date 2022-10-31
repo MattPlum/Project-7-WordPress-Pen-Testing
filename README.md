@@ -6,14 +6,20 @@ Time spent: **X** hours spent in total
 
 ## Pen Testing Report
 
-### 1. (Required) Vulnerability Name or ID
+### 1. Unauthenticated Stored Cross-Site Scripting
 
 - [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
+If a comment is longer than 64KB (the size limit) it will be truncated and result in a malformed HTML resulting in XSS vulnerabilities
+  - Vulnerability types: XSS
+  - Tested in version: 4.2
+  - Fixed in version: 4.2.1
 - [ ] GIF Walkthrough: 
+
 - [ ] Steps to recreate: 
+  - Post a comment on a page that has at least of size 64KB which when truncated generates a malformed HTML to inject your payload.
+  - View the comment to see the XSS exploit
+
+
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
   
