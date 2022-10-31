@@ -14,25 +14,28 @@ If a comment is longer than 64KB (the size limit) it will be truncated and resul
   - Tested in version: 4.2
   - Fixed in version: 4.2.1
 - [ ] GIF Walkthrough: 
-
+    - <img src="https://github.com/MattPlum/Project-7-WordPress-Pen-Testing/blob/f85f896a9208a745c0f5e8948ee676fe14d64500/exp1.gif">
 - [ ] Steps to recreate: 
   - Post a comment on a page that has at least of size 64KB which when truncated generates a malformed HTML to inject your payload.
   - View the comment to see the XSS exploit
 
 
 - [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [Link 1](None)
   
-### 2. (Required) Vulnerability Name or ID
+### 2. (Required) Stored XSS
 
 - [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
+  - Vulnerability types: XSS
+  - Tested in version: 4.2
+  - Fixed in version: 4.2.3
 - [ ] GIF Walkthrough: 
+    - <img src="https://github.com/MattPlum/Project-7-WordPress-Pen-Testing/blob/f85f896a9208a745c0f5e8948ee676fe14d64500/exp1.gif">
 - [ ] Steps to recreate: 
+    - Requires contributor or author level account, make a page with the following link. Switch from Visual to Text view: 
+    - `<a href=“[caption code=“>]</a><a title=“ onmouseover=alert(‘Vulnerability’) “>link</a>`
 - [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - None
 
 ### 3. (Required) Vulnerability Name or ID
 
