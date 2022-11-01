@@ -23,9 +23,10 @@ If a comment is longer than 64KB (the size limit) it will be truncated and resul
 - [ ] Affected source code:
   - [Link 1](None)
   
-### 2. (Required) Stored XSS
+### 2.  Authenticated Stored Cross-Site Scripting  
 
 - [ ] Summary: 
+The Text editor is a WYSIWYG editor that contains a vulnerability in how it processes shortcode. Similair to first exploit, but requires an authenticated user to create a post
   - Vulnerability types: XSS
   - Tested in version: 4.2
   - Fixed in version: 4.2.3
@@ -37,16 +38,19 @@ If a comment is longer than 64KB (the size limit) it will be truncated and resul
 - [ ] Affected source code:
   - None
 
-### 3. (Required) Vulnerability Name or ID
+### 3. Widget title XSS
 
 - [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
+  - Vulnerability types: XSS
+  - Tested in version: 4.2
   - Fixed in version: 
 - [ ] GIF Walkthrough: 
+  - <img src= "https://github.com/MattPlum/Project-7-WordPress-Pen-Testing/blob/43708455092516fd77e1c58a876ff1449877b81a/exp3.gif">
 - [ ] Steps to recreate: 
+  - Login as Admin, go to Appearance -> Customize -> Widgets. Then click Add Widget and select the text option. Enter a title and the payload into the content
+  - `<img src="example.com" onerror="alert('xss');"> `
 - [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [Link 1](https://core.trac.wordpress.org/changeset/33529)
 
 ### 4. (Optional) Vulnerability Name or ID
 
