@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pen Testing
 
-Time spent: **X** hours spent in total
+Time spent: **10** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -63,20 +63,9 @@ The Text editor is a WYSIWYG editor that contains a vulnerability in how it proc
   - <img src="https://github.com/MattPlum/Project-7-WordPress-Pen-Testing/blob/443283ba59c8589270511e5e11068c70a426b222/exp4.gif">
 - [ ] Steps to recreate: 
   - Install Wpscan tool and run command 
-  - 'wpscan --url [WORDPRESS_BASE_URL] --enumerate u"'
+  - ' wpscan --url [WORDPRESS_BASE_URL] --enumerate u '
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/branches/4.1/src/wp-login.php)
-
-### 5. (Optional) Vulnerability Name or ID
-
-- [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
 
 ## Assets
 
@@ -96,10 +85,13 @@ GIFs created with  ...
 ## Notes
 
 Describe any challenges encountered while doing the work
+  
+  WPdistillery was giving a lot of errors. Needed to increase processor size as well as add 192.168.33.10 wpdistillery.vm
+to the /etc/hosts file which was not included in the instructions. 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [Matt Lee]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
