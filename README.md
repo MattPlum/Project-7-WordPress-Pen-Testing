@@ -52,16 +52,20 @@ The Text editor is a WYSIWYG editor that contains a vulnerability in how it proc
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/changeset/33529)
 
-### 4. (Optional) Vulnerability Name or ID
+### 4. User Enumeration at Login
 
 - [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
+  - When trying to login to with a username not in the database, it will return an "Invalid Username" message. When there is a match it will return a different message saying "The password you entered for the username <username> is incorrect. This can give the attacker a list of users through brute force username enumeration
+  - Vulnerability types: Enumeration
+  - Tested in version: 4.2
+  - Fixed in version: Not fixed
 - [ ] GIF Walkthrough: 
+  - <img src="https://github.com/MattPlum/Project-7-WordPress-Pen-Testing/blob/443283ba59c8589270511e5e11068c70a426b222/exp4.gif">
 - [ ] Steps to recreate: 
+  - Install Wpscan tool and run command 
+  - 'wpscan --url [WORDPRESS_BASE_URL] --enumerate u"'
 - [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [Link 1](https://core.trac.wordpress.org/browser/branches/4.1/src/wp-login.php)
 
 ### 5. (Optional) Vulnerability Name or ID
 
@@ -82,7 +86,7 @@ List any additional assets, such as scripts or files
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
-
+- [User Enum Vulnerability Discussion]https://www.wpwhitesecurity.com/wordpress-username-disclosure-vulnerability/]
 GIFs created with  ...
 <!-- Recommended GIF Tools:
 [Kap](https://getkap.co/) for macOS
