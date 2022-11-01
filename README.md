@@ -86,7 +86,7 @@ GIFs created with  ...
 
 Describe any challenges encountered while doing the work
   
-  WPdistillery was giving a lot of errors. Needed to increase processor size as well as add 192.168.33.10 wpdistillery.vm
+  WPdistillery was giving a lot of errors. Needed to increase processor size from 1 to 2 in Virtual box of the VM as well as add 192.168.33.10 wpdistillery.vm
 to the /etc/hosts file which was not included in the instructions. 
 
 ## License
